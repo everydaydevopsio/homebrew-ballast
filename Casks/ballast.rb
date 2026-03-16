@@ -3,7 +3,7 @@ cask "ballast" do
   name "ballast"
   desc "CLI that installs AI agent rules for Cursor, Claude Code, OpenCode, and Codex"
   homepage "https://github.com/everydaydevopsio/ballast"
-  version "4.1.4"
+  version "4.1.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "ballast" do
 
   on_macos do
     on_intel do
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast-go_#{version}_darwin_amd64.tar.gz"
-      sha256 "c63c962cb99fc7f2325da7216086acf812e169cafe8e870da61c0889dbcaa657"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_darwin_amd64.tar.gz"
+      sha256 "bdfaa871ceb927572d123712c13ed76ee578446126e0f1d77f3390223a44d702"
     end
     on_arm do
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast-go_#{version}_darwin_arm64.tar.gz"
-      sha256 "c038ac844c76cb3ce8675eb590e5662df0e73c6b37ec63af28477129a1308fb6"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_darwin_arm64.tar.gz"
+      sha256 "4ccfb39b2c9e2e64f76d89ba32375ad22b711fc6b017a2eea678fe4275248811"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast-go_#{version}_linux_amd64.tar.gz"
-      sha256 "c58d5be2b4dbb37be37c282cdcc5b0a5146e597fa889e7ff32e62a892c462090"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_linux_amd64.tar.gz"
+      sha256 "e166635e172232eaf9cc463d8283f2de76a9c53892bf3ac7c85cd581d86880c2"
     end
     on_arm do
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast-go_#{version}_linux_arm64.tar.gz"
-      sha256 "631c8d35271f925490a5ec0fd6cb32375f26d00de479db70e42836022b8d848d"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_linux_arm64.tar.gz"
+      sha256 "783b59a4211c61f5e9803fb37ced1d3420e590075396c3d30709e99f10662b02"
     end
   end
 
