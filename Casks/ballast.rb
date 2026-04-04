@@ -3,7 +3,7 @@ cask "ballast" do
   name "ballast"
   desc "CLI that installs AI agent rules for Cursor, Claude Code, OpenCode, and Codex"
   homepage "https://github.com/everydaydevopsio/ballast"
-  version "5.5.1"
+  version "5.5.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ballast" do
   on_macos do
     on_intel do
       url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_darwin_amd64.tar.gz"
-      sha256 "50f482566e57e811f861fecf0cf0fd5abe6d3d06b6c2c45a8a6273fdbea0cbcb"
+      sha256 "25cd55af5ce69a14ced216758124ff45d1ef3b7e3c9349fe60e140374ed1e983"
     end
     on_arm do
       url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_darwin_arm64.tar.gz"
-      sha256 "585b7c30238916cd65178b42a0aabcce538e3f88e9fc7141b3276fabb8c9d147"
+      sha256 "ab085bc5568b23e6c616833e6af053396d40a2889c85c4d95e367e74229bcb7c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_linux_amd64.tar.gz"
-      sha256 "f4bd77a5dc4233116fed447b2801216dcc29d378988f299ec0430ac5de7fa313"
+      sha256 "7e7050a38e4ba691d5bb0ddec43e672fa039d871ea5f6f9ec13727619d71eeca"
     end
     on_arm do
       url "https://github.com/everydaydevopsio/ballast/releases/download/v#{version}/ballast_#{version}_linux_arm64.tar.gz"
-      sha256 "d9fddcded78f68b275a5b98201adb27c798b4c1e2d281343708f128a56e8bb2c"
+      sha256 "ad89db54ddbfe2fb97d920f4fe47f479b46331af01816fa697a58e3e62ee073c"
     end
   end
 
