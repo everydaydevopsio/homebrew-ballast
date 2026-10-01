@@ -5,21 +5,21 @@
 class Ballast < Formula
   desc "CLI that installs AI agent rules for Cursor, Claude Code, OpenCode, and Codex"
   homepage "https://github.com/everydaydevopsio/ballast"
-  version "5.21.1"
+  version "5.21.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.1/ballast_5.21.1_darwin_amd64.tar.gz"
-      sha256 "c2406cf4b4990aff90ec56b3296b3e5946557e30223bb173e3b80f4a52fefd39"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.2/ballast_5.21.2_darwin_amd64.tar.gz"
+      sha256 "1b8a11e3a766861a8aaeae83dd2238739052d5f22eaeafa43062d770795a244b"
 
       define_method(:install) do
         bin.install "ballast"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.1/ballast_5.21.1_darwin_arm64.tar.gz"
-      sha256 "c9e089af68a71203486fca4ac2d7bd9f7afeeedd775b456f02fd26c938b764ab"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.2/ballast_5.21.2_darwin_arm64.tar.gz"
+      sha256 "532f88d00776e4992200d55eb3545f081760336da3a2953bbc663c56e2e82ccb"
 
       define_method(:install) do
         bin.install "ballast"
@@ -29,15 +29,15 @@ class Ballast < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.1/ballast_5.21.1_linux_amd64.tar.gz"
-      sha256 "fa4057b87555d79a4b317cb104250b9e41165e68b5bef6b357899788dd931f9e"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.2/ballast_5.21.2_linux_amd64.tar.gz"
+      sha256 "cbe410bcdd4767597f9e9002e1a1797e3465b3dbf949514db54fef3d05a38d17"
       define_method(:install) do
         bin.install "ballast"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.1/ballast_5.21.1_linux_arm64.tar.gz"
-      sha256 "a434c7b953e373655662840abfe59fedc986f92fd27de7f75930e86ae62628b2"
+      url "https://github.com/everydaydevopsio/ballast/releases/download/v5.21.2/ballast_5.21.2_linux_arm64.tar.gz"
+      sha256 "28f276e893a59124939603da1519d865089d08f191befefa78d4cb51f8923e73"
       define_method(:install) do
         bin.install "ballast"
       end
